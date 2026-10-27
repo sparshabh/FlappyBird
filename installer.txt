@@ -1,0 +1,31 @@
+Flappy Bird — Installers
+========================
+
+Layout
+------
+  Flappy Bird/
+    Game/              Game source + assets (run: python main.py)
+    Installer/         Optional support files
+    install.sh         Linux launcher → TUI installer
+    install_linux.py   Linux TUI (Install / Update / Uninstall)
+    install.bat        Windows launcher → GUI installer
+    install_windows.py Windows GUI installer
+    requirements.txt
+    README.md
+
+Linux
+-----
+  ./install.sh
+  # Builds ~/.local/bin/flappy-bird + .desktop entry (rofi / app menu)
+
+Windows
+-------
+  install.bat
+  # Builds %LOCALAPPDATA%\Programs\FlappyBird\FlappyBird.exe
+  # Start Menu + optional Desktop shortcut
+
+Play without installing
+-----------------------
+  cd Game
+  pip install -r ../requirements.txt
+  python main.py
